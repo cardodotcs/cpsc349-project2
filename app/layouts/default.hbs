@@ -7,14 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
-<body>
-  {{#if currentUser}}
-    <a href="/user/logout">Logout</a>
-  {{else}}
-    <a class="nav__button" href="/user/signup">Sign up</a>
-    &nbsp;
-    <a class="nav__button" href="/user/login">Log in</a>
-  {{/if}}
+<body class="bg-[#121942] text-white font-mono">
   {{!-- Show errors --}}
   {{#if flashErrors }}
     {{#each flashErrors }}
