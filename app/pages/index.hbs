@@ -1,8 +1,64 @@
-<h1>Welcome to my app!</h1>
 <ul>
   {{#if currentUser}}
-    <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+    <nav class="flex items-center flex-wrap bg-[#0F1538] justify-between p-5 border-solid border-b-2 border-[#101F5E]">
+        <p class="text-2xl">Insert Name Here</p>
+        <div class="block float-right space-x-5">
+            <a class="hover:text-[#5696FF]" href="#">Home</a>
+            <a class="hover:text-[#5696FF]" href="#">Journal</a>
+            <a class="hover:text-[#5696FF]" href="/aboutme">About me</a>
+        </div>  
+    </nav>
+
+    <h1 class ="text-6xl text-center p-5 pt-9  text-left" >Insert Name Here</h1>
+    <h2 class="text-3xl text-center p-2 text-center">The future of journaling</h2>
+    
+    <div class="text-center justify-center pt-28">
+        <p class="text-center text-2xl">A relaxing place to journal and share your thoughts without all the bloat</p>
+
+        <div class="flex text-center justify-center h-15 pt-16">
+            <img class="" src="index.jpeg" alt="dog">
+            <ul class="p-4">
+                <li><h3 class="text-3xl">Easy to use interface</h3></li>
+                <li class="pt-4"><p>A website that lets you easily journal anytime, anywhere</p></li>
+                <li class="pt-2"><p>Easily edit and jot down your thoughts </p></li>
+            </ul>
+        </div>
+        
+        <div class="p-10">
+            <a class="hover:text-[#5696FF] text-5xl rounded border-2 border-solid p-4 bg-[#101F5A] hover:border-[#5696FF]" href="aboutme.html">Click here to view your journal!</a>
+        </div>
+    </div>
+
   {{else}}
-    <li><a href="/user/signup">Sign up for an account</a></li>
+    <nav class="flex items-center flex-wrap bg-[#0F1538] justify-between p-5 border-solid border-b-2 border-[#101F5E]">
+        <p class="text-2xl">Insert Name Here</p>
+        <div class="block float-right space-x-5">
+            <a class="hover:text-[#5696FF] text-xl rounded border-2 border-solid p-2 border-[#101F5A] hover:border-[#5696FF]" href="user/signup">Sign up today</a>
+            <a class="hover:text-[#5696FF]" href="#">Home</a>
+            <a class="hover:text-[#5696FF]" href="aboutme.html">About me</a>
+        </div>  
+    </nav>
+
+    <h1 class ="text-6xl text-center p-5 pt-9  text-left" >Insert Name Here</h1>
+    <h2 class="text-3xl text-center p-2 text-center">The future of journaling</h2>
+    
+    <div class="text-center justify-center pt-28">
+        <p class="text-center text-2xl">A relaxing place to journal and share your thoughts without all the bloat</p>
+
+        <div class="flex text-center justify-center h-15 pt-16">
+            <img class="" src="index.jpeg" alt="dog">
+            <ul class="p-4">
+                <li><h3 class="text-3xl">Easy to use interface</h3></li>
+                <li class="pt-4"><p>A website that lets you easily journal anytime, anywhere</p></li>
+                <li class="pt-2"><p>Easily edit and jot down your thoughts </p></li>
+            </ul>
+        </div>
+        
+        <div class="p-10">
+            <p class="text-center text-2xl pt-20 p-10">Join Today!</p>
+            <a class="hover:text-[#5696FF] text-5xl rounded border-2 border-solid p-4 bg-[#101F5A] hover:border-[#5696FF]" href="user/signup">Sign up today</a>
+            <p class="text-center text-xl pt-10 p-10">Free to signup and use</p>
+        </div>
+    </div>
   {{/if}}
 </ul>

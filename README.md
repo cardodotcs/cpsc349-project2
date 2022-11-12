@@ -1,3 +1,6 @@
+Ricardo Gonzalez: rickardo@csu.fullerton.edu  
+Github: Cardogg
+
 # Create an app! 🪂
 
 Create your first Remake app:
