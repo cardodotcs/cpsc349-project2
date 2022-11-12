@@ -565,6 +565,10 @@ video {
   margin: 0.5rem;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -579,6 +583,10 @@ video {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .flex-col {
@@ -631,11 +639,6 @@ video {
 .border-\[\#101F5A\] {
   --tw-border-opacity: 1;
   border-color: rgb(16 31 90 / var(--tw-border-opacity));
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#121942\] {
