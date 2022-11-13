@@ -1,9 +1,17 @@
+<nav class="flex items-center flex-wrap bg-[#0F1538] justify-between p-5 border-solid border-b-2 border-[#101F5E]">
+  <p class="text-2xl">Journality</p>
+  <div class="block float-right space-x-5">
+    <a class="hover:text-[#5696FF] text-xl rounded border-2 border-solid p-2 border-[#101F5A] hover:border-[#5696FF]" href="user/signup">Sign up today</a>
+    <a class="hover:text-[#5696FF]" href="index">Home</a>
+    <a class="hover:text-[#5696FF]" href="/aboutme">About me</a>
+    </div>  
+</nav>
 <form action="/user/login" method="post">
 <div class="text-center justify-center pt-28">
         <p class="text-center text-3xl">Log in</p>
 
         <div class="inline-flex flex-col text-center justify-center h-15 pt-16">
-          <input class="p-2 m-2"type="text" name="username" placeholder="username" required>
+          <input class="p-2 m-2" type="text" name="username" placeholder="username" required>
           <input class="p-2 m-2" type="password" name="password" placeholder="password" required>
           <a class="p-1 m-2" href="/user/forgot">Forgot your password?</a>
           <button class="hover:text-[#5696FF] rounded border-2 border-solid p-4 bg-[#101F5A] hover:border-[#5696FF]" type="submit">Log in</button>
