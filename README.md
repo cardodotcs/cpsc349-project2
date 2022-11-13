@@ -1,6 +1,12 @@
 Ricardo Gonzalez: rickardo@csu.fullerton.edu  
 Github: Cardogg
 
+Julia Gonzalez: JuliaG22@csu.fullerton.edu
+Github: JuliaG22
+
+Cristopher Briseno: cbriseno@csu.fullerton.edu
+Github: cjbriseno
+
 # Create an app! 🪂
 
 Create your first Remake app:
