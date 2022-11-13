@@ -1,10 +1,24 @@
-<h1>Welcome to the app!</h1>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+<a class="hover:text-[#5696FF] rounded border-2 border-solid p-2 bg-[#101F5A] hover:border-[#5696FF]" href="/user/logout">Logout</a>
 <body>
-    <h1 class="text-3xl font-bold underline text-blue-700">
-        Hello world!
+    <h1 class="text-center text-4xl font-bold underline p-6">
+        Your Journality Begins Here!
     </h1>
+    <div object class="text-center">
+        <button class="hover:text-[#5696FF] rounded-full border-2 border-solid p-4 bg-[#101F5A] hover:border-[#5696FF] " new:entry>Add a New Entry</button>
+        <div class="text-black" array key="entries">
+            {{#for entry in entries}}
+            <div class="inline-block rounded border-2 border-solid border-orange-400 bg-white p-4 m-10 w-6/12" object key:entry-name="@search">
+                <h1 class="rounded border-orange-400 border-2 shadow p-4 m-2 text-2xl text-left" target:entry-name="@innerText" edit:entry-name>{{default entry.entryName "Entry title"}}</h1>
+                <div class="rounded border-orange-300 border-2 shadow p-6 m-2"object key:writing="@innerText" edit:writing:textarea:without-remove>{{default entry.writing "Entry text"}}</div>
+                <div object key:my-favorite-image-url="@search">
+                    <div>
+                        <img <img class="object-scale-down h-40 w-96" target:my-favorite-image-url="@src" src={{default entry.myFavoriteImageUrl ""}} alt=" ">
+                    </div>
+                    <button class="text-left hover:text-[#5696FF] rounded-full border-2 border-solid p-4 bg-[#FF7F50] hover:border-[#5696FF]" edit:my-favorite-image-url:without-remove>Add an image URL</button>
+                </div>
+            </div>
+            {{/for}}
+        </div>
+    </div>
 </body>
 
